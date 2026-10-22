@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard KWU TKJ - SMK Negeri 1 Turen</title>
+</head>
+<body>
+
+    <header>
+        <h1>KWU TKJ</h1>
+        <p>SMK Negeri 1 Turen</p>
+        <p>Dashboard Kewirausahaan Teknik Komputer dan Jaringan</p>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a> |
+            <a href="#layanan">Layanan Servis</a> |
+            <a href="#pesanan">Data Pesanan</a> |
+            <a href="#pemesanan">Pemesanan</a> |
+            <a href="#kontak">Kontak</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <!-- DASHBOARD -->
+        <section id="dashboard">
+            <h2>Dashboard Utama</h2>
+            <p>
+                Selamat datang di layanan kewirausahaan TKJ
+                SMK Negeri 1 Turen.
+            </p>
+            <p>
+                Kami melayani perbaikan dan perawatan perangkat
+                teknologi untuk membantu kebutuhan masyarakat.
+            </p>
+
+            <h3>Statistik Layanan</h3>
+
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Total Pesanan</th>
+                        <th>Sedang Dikerjakan</th>
+                        <th>Pesanan Selesai</th>
+                        <th>Menunggu Konfirmasi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- LAYANAN -->
+        <section id="layanan">
+            <h2>Layanan Servis Kami</h2>
+            <p>Pilih layanan sesuai kebutuhan perangkat Anda.</p>
+
+            <article>
+                <h3>1. Servis Laptop</h3>
+                <p>Layanan perbaikan dan perawatan laptop.</p>
+                <ul>
+                    <li>Instal ulang sistem operasi</li>
+                    <li>Instalasi aplikasi dan driver</li>
+                    <li>Pembersihan laptop</li>
+                    <li>Perbaikan laptop lemot</li>
+                    <li>Pemeriksaan kerusakan perangkat</li>
+                    <li>Perawatan sistem dan penyimpanan</li>
+                </ul>
+                <p>Harga: Mulai dari Rp25.000</p>
+            </article>
+
+            <article>
+                <h3>2. Servis Komputer dan PC</h3>
+                <p>Layanan perbaikan komputer desktop dan PC.</p>
+                <ul>
+                    <li>Perakitan komputer</li>
+                    <li>Instalasi Windows dan Linux</li>
+                    <li>Upgrade RAM dan penyimpanan</li>
+                    <li>Pembersihan komponen PC</li>
+                    <li>Pemeriksaan perangkat keras</li>
+                    <li>Perbaikan masalah sistem komputer</li>
+                </ul>
+                <p>Harga: Mulai dari Rp30.000</p>
+            </article>
+
+            <article>
+                <h3>3. Servis HP</h3>
+                <p>Layanan pemeriksaan dan perawatan HP.</p>
+                <ul>
+                    <li>Pemeriksaan masalah perangkat lunak</li>
+                    <li>Bantuan pengaturan HP</li>
+                    <li>Pembersihan file yang tidak diperlukan</li>
+                    <li>Pemasangan aplikasi</li>
+                    <li>Pemeriksaan kendala koneksi</li>
+                </ul>
+                <p>Harga: Mulai dari Rp15.000</p>
+                <p>
+                    Catatan: Perbaikan perangkat keras HP
+                    bergantung pada kemampuan dan ketersediaan alat.
+                </p>
+            </article>
+
+            <article>
+                <h3>4. Layanan Jaringan</h3>
+                <p>Layanan instalasi dan pemeriksaan jaringan komputer.</p>
+                <ul>
+                    <li>Pemasangan kabel LAN</li>
+                    <li>Pembuatan kabel jaringan</li>
+                    <li>Konfigurasi router</li>
+                    <li>Konfigurasi jaringan lokal</li>
+                    <li>Pemeriksaan koneksi internet</li>
+                </ul>
+                <p>Harga: Mulai dari Rp20.000</p>
+            </article>
+
+            <p>
+                <strong>Informasi:</strong> Semua harga di atas merupakan
+                estimasi awal dan dapat berubah sesuai tingkat kerusakan,
+                jenis perangkat, serta kebutuhan komponen.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- DATA PESANAN -->
+        <section id="pesanan">
+            <h2>Data Pesanan Servis</h2>
+
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Jenis Perangkat</th>
+                        <th>Keluhan</th>
+                        <th>Tanggal Masuk</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="6">
+                            Belum ada pesanan servis.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Keterangan Status</h3>
+            <ul>
+                <li>Menunggu Konfirmasi</li>
+                <li>Sedang Diperiksa</li>
+                <li>Sedang Dikerjakan</li>
+                <li>Selesai</li>
+                <li>Sudah Diambil</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- FORM PEMESANAN -->
+        <section id="pemesanan">
+            <h2>Formulir Pemesanan Servis</h2>
+            <p>Silakan isi data berikut untuk mengajukan servis.</p>
+
+            <form action="#" method="post">
+                <p>
+                    <label for="nama">Nama Pelanggan:</label><br>
+                    <input type="text" id="nama" name="nama"
+                           placeholder="Masukkan nama lengkap" required>
+                </p>
+
+                <p>
+                    <label for="telepon">Nomor WhatsApp:</label><br>
+                    <input type="tel" id="telepon" name="telepon"
+                           placeholder="Contoh: 08xxxxxxxxxx" required>
+                </p>
+
+                <p>
+                    <label for="perangkat">Jenis Perangkat:</label><br>
+                    <select id="perangkat" name="perangkat" required>
+                        <option value="">-- Pilih Perangkat --</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Komputer">Komputer</option>
+                        <option value="PC">PC</option>
+                        <option value="HP">HP</option>
+                        <option value="Jaringan">Jaringan</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="merek">Merek dan Tipe Perangkat:</label><br>
+                    <input type="text" id="merek" name="merek"
+                           placeholder="Contoh: ASUS VivoBook">
+                </p>
+
+                <p>
+                    <label for="layanan-pilih">Jenis Layanan:</label><br>
+                    <select id="layanan-pilih" name="layanan" required>
+                        <option value="">-- Pilih Layanan --</option>
+                        <option value="Instal Ulang">Instal Ulang</option>
+                        <option value="Instalasi Aplikasi">Instalasi Aplikasi</option>
+                        <option value="Perbaikan Perangkat">Perbaikan Perangkat</option>
+                        <option value="Pembersihan">Pembersihan</option>
+                        <option value="Upgrade Komponen">Upgrade Komponen</option>
+                        <option value="Perbaikan Jaringan">Perbaikan Jaringan</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="keluhan">Keluhan atau Kerusakan:</label><br>
+                    <textarea id="keluhan" name="keluhan" rows="5"
+                              placeholder="Jelaskan masalah perangkat Anda"
+                              required></textarea>
+                </p>
+
+                <p>
+                    <label for="tanggal">Tanggal Pengajuan:</label><br>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </p>
+
+                <p>
+                    <button type="submit">Kirim Pemesanan</button>
+                    <button type="reset">Reset Formulir</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- KEUNGGULAN -->
+        <section id="keunggulan">
+            <h2>Mengapa Memilih KWU TKJ?</h2>
+            <ul>
+                <li>Dikelola sebagai kegiatan kewirausahaan siswa TKJ.</li>
+                <li>Melayani berbagai kebutuhan teknologi.</li>
+                <li>Harga layanan terjangkau.</li>
+                <li>Pemeriksaan perangkat sebelum perbaikan.</li>
+                <li>Mengutamakan pelayanan yang ramah dan bertanggung jawab.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- KONTAK -->
+        <section id="kontak">
+            <h2>Kontak dan Informasi</h2>
+            <p><strong>Nama Usaha:</strong> KWU TKJ</p>
+            <p><strong>Sekolah:</strong> SMK Negeri 1 Turen</p>
+            <p><strong>Bidang:</strong> Servis Laptop, Komputer, PC, HP, dan Jaringan</p>
+            <p><strong>Alamat:</strong> SMK Negeri 1 Turen, Malang, Jawa Timur</p>
+            <p><strong>WhatsApp:</strong> Isi dengan nomor admin resmi.</p>
+            <p><strong>Jam Pelayanan:</strong> Sesuai jadwal operasional.</p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 KWU TKJ - SMK Negeri 1 Turen.</p>
+        <p>Belajar, Berkarya, Berwirausaha di Bidang Teknologi.</p>
+    </footer>
+
+</body>
+</html>
