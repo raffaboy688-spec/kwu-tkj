@@ -1,0 +1,376 @@
+
+/* ==========================================
+   DASHBOARD KWU TKJ
+   SMK NEGERI 1 TUREN
+   Tema: Putih, Biru, Biru Tua
+========================================== */
+
+:root {
+    --putih: #ffffff;
+    --biru: #2563eb;
+    --biru-muda: #60a5fa;
+    --biru-tua: #102a56;
+    --biru-gelap: #0b1d3a;
+    --latar: #f1f5fb;
+    --teks: #183153;
+    --abu: #64748b;
+    --garis: #dbe5f1;
+    --hijau: #16a34a;
+    --kuning: #d97706;
+    --merah: #dc2626;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--latar);
+    color: var(--teks);
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(
+        135deg,
+        var(--biru-tua),
+        var(--biru)
+    );
+    color: var(--putih);
+    padding: 30px 6%;
+    box-shadow: 0 4px 15px rgba(16, 42, 86, 0.15);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--putih);
+}
+
+header p {
+    color: #e0ecff;
+    margin-bottom: 5px;
+}
+
+header p:first-of-type {
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+header nav a {
+    color: var(--putih);
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    background: var(--putih);
+    color: var(--biru-tua);
+    transform: translateY(-2px);
+}
+
+/* KONTEN UTAMA */
+main {
+    max-width: 1250px;
+    margin: 30px auto;
+    padding: 0 25px;
+}
+
+/* SECTION */
+section {
+    background: var(--putih);
+    padding: 28px;
+    margin-bottom: 25px;
+    border: 1px solid var(--garis);
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(16, 42, 86, 0.05);
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: var(--biru-tua);
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--garis);
+}
+
+section h3 {
+    color: var(--biru);
+    margin: 15px 0 8px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+section ul {
+    padding-left: 24px;
+    margin: 10px 0;
+}
+
+section li {
+    margin-bottom: 5px;
+}
+
+/* STATISTIK DAN TABEL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    background: var(--putih);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: var(--biru-tua);
+    color: var(--putih);
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border: 1px solid var(--garis);
+    color: var(--teks);
+}
+
+tbody tr:nth-child(even) {
+    background: #f4f8ff;
+}
+
+tbody tr:hover {
+    background: #e8f1ff;
+}
+
+/* KARTU LAYANAN */
+article {
+    background: #f8faff;
+    border: 1px solid var(--garis);
+    border-left: 5px solid var(--biru);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 18px 0;
+    transition: 0.3s;
+}
+
+article:hover {
+    border-left-color: var(--biru-tua);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.1);
+    transform: translateY(-3px);
+}
+
+article h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: var(--biru-tua);
+}
+
+article p:last-child {
+    color: var(--biru);
+    font-weight: bold;
+}
+
+/* FORM PEMESANAN */
+form {
+    max-width: 750px;
+    margin-top: 20px;
+}
+
+form p {
+    margin-bottom: 18px;
+}
+
+label {
+    display: inline-block;
+    color: var(--biru-tua);
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd8e9;
+    border-radius: 8px;
+    background: var(--putih);
+    color: var(--teks);
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--biru);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* TOMBOL */
+button {
+    background: var(--biru);
+    color: var(--putih);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 4px 5px 4px 0;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--biru-tua);
+    box-shadow: 0 5px 12px rgba(16, 42, 86, 0.18);
+    transform: translateY(-2px);
+}
+
+button[type="reset"] {
+    background: #e7eef9;
+    color: var(--biru-tua);
+    border: 1px solid #cbd8e9;
+}
+
+button[type="reset"]:hover {
+    background: #d5e3f8;
+}
+
+/* TAUTAN */
+a {
+    transition: 0.2s;
+}
+
+/* PEMISAH */
+hr {
+    border: none;
+    border-top: 1px solid var(--garis);
+    margin: 25px 0;
+}
+
+/* KONTAK */
+#kontak p {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background: #f4f8ff;
+    border-radius: 6px;
+}
+
+#kontak strong {
+    color: var(--biru-tua);
+}
+
+/* KEUNGGULAN */
+#keunggulan li::marker {
+    color: var(--biru);
+}
+
+/* FOOTER */
+footer {
+    background: var(--biru-gelap);
+    color: var(--putih);
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #d8e6ff;
+}
+
+/* RESPONSIVE TABLET DAN HP */
+@media (max-width: 768px) {
+    header {
+        padding: 25px 5%;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    article {
+        padding: 16px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* RESPONSIVE HP KECIL */
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    section h2 {
+        font-size: 19px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+    }
+}
